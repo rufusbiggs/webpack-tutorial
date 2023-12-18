@@ -1,7 +1,8 @@
 module.exports = {
     mode: 'development',
     entry: './code/main.js',
-    rules: 
+    module: {
+        rules: 
         [
             {
                 test: /\.css$/i,
@@ -19,5 +20,6 @@ module.exports = {
                 test: /\.ttf$/i,
                 type: "asset/resource"
             }
-        ],
+        ]
+    },
 }
